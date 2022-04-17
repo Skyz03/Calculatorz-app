@@ -3,7 +3,7 @@ import React from "react";
 const Header = () => {
   return (
     <header className="calc__header">
-      <h1 className="calc__title">Calc</h1>
+      <h1 className="calc__title">calc</h1>
       <div className="calc__switch-wrapper">
         <span className="calc__text">Theme</span>
         <div className="calc__switch">
