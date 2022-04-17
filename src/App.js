@@ -1,6 +1,8 @@
 import React from "react";
+import Calc from "./components/Calc";
+
 function App() {
-  return <div className="App">Hello</div>;
+  return <Calc />;
 }
 
 export default App;
