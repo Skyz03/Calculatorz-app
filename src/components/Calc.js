@@ -1,16 +1,20 @@
 import React from "react";
-import Header from "./components/Header";
-import Display from "./components/Display";
-import Btn from "./components/Btn";
-import Footer from "./components/Footer";
+import Header from "./Header";
+// import Display from "./Display";
+// import Btn from "./Btn";
+// import Footer from "./Footer";
 
 const Calc = () => {
   return (
     <main className="component-wrapper">
-      <Header />
-      <Display />
-      <Btn />
-      <Footer />
+      <div className="calc">
+        <div className="calc__container">
+          <Header />
+          {/* <Display />
+          <Btn />
+          <Footer /> */}
+        </div>
+      </div>
     </main>
   );
 };
