@@ -2,7 +2,8 @@ import React from "react";
 import logo from "../image/gear.png";
 
 const Display = () => {
-  const [display, setDisplay] = React.useState("399,981");
+  const [display, setDisplay] = React.useState("399");
+  const [currentDisplay, setCurrentDisplay] = React.useState(0);
 
   const del = () => {
     try {
@@ -13,7 +14,7 @@ const Display = () => {
   };
   const calculate = () => {
     try {
-      setDisplay(eval(display));
+      setCurrentDisplay(eval(display));
     } catch (e) {
       setDisplay("Error");
     }
@@ -21,6 +22,7 @@ const Display = () => {
 
   const reset = () => {
     setDisplay("");
+    setCurrentDisplay(0);
   };
 
   return (
@@ -33,7 +35,7 @@ const Display = () => {
           {display}
         </p>
         <p className="calc__display-value--current" data-current-value="">
-          {display}
+          {currentDisplay}
         </p>
       </div>
 
