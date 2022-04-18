@@ -49,12 +49,20 @@
     display: flex;
     justify-content: space-between;
     max-height: 38px;
+    align-items: center;
   }
 
   &__title {
     color: $c-text-header;
-    font-size: 1.9375rem;
+    letter-spacing: 1px;
+    font-size: 2.5rem;
     font-weight: 700;
+  }
+
+  &__img {
+    width: 35px;
+    height: 35px;
+    padding: 5px;
   }
 
   &__switch-wrapper {
@@ -65,10 +73,11 @@
   &__text {
     color: $c-text-header;
     text-transform: uppercase;
-    font-size: 0.76rem;
+    font-size: 1rem;
     letter-spacing: 1px;
     margin: 0 23px 1px 0;
     font-weight: 700;
+    letter-spacing: 1.5px;
   }
 
   &__switch {
@@ -290,7 +299,6 @@
   &__key {
     position: relative;
     padding-top: 6px; // align font with design
-    font-family: $ff-primary;
     font-size: 1.75rem;
     font-weight: 700;
     color: $c-text-primary;
@@ -310,7 +318,7 @@
     }
 
     @include breakpoint("md") {
-      font-size: 2rem;
+      font-size: 2.5rem;
       border-radius: 10px;
     }
 
