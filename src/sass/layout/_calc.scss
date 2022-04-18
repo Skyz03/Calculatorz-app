@@ -258,8 +258,7 @@
   &__display-value {
     color: $c-text-display;
     justify-self: end;
-    font-weight: 700;
-
+    font-size: 3rem;
     &--previous {
       @extend #{$root}__display-value;
       font-size: clamp(1rem, 4vw, 1.3rem);
@@ -269,7 +268,7 @@
 
     &--current {
       @extend #{$root}__display-value;
-      font-size: clamp(2rem, 7vw, 2.9375rem);
+      font-size: clamp(3rem, 7vw, 2.9375rem);
 
       &.small {
         font-size: clamp(1.125rem, 4.5vw, 2rem);
@@ -290,6 +289,7 @@
     border-radius: 10px;
     z-index: 0;
     transition: padding 250ms ease-in;
+    margin-top: 25px;
 
     @include breakpoint("md") {
       padding: 31px 31px 37px 31px;
