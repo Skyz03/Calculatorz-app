@@ -5,7 +5,7 @@ import Display from "./Display";
 
 const Calc = () => {
   return (
-    <main className="component-wrapper">
+    <main data-theme="light" className="component-wrapper">
       <div className="calc">
         <div className="calc__container">
           <Header />
